@@ -1,1 +1,23 @@
-<%= render '/refinery/content_page' %>
+<div class="container">
+  <div id="top_banner">
+    <div id="image">
+      <%= image_tag('tom_logo.jpg') %>
+    </div>
+  </div>
+
+  <div id="span_left">
+    <div id="color">
+
+    </div>
+  </div>
+  <div id="span_right">
+    <%= render(:partial => "/refinery/menu", :locals => {:dom_id => 'menu',:css => 'menu'}) %>
+  </div>
+  <div id="span_center">
+    <div id="logo">
+      <%= link_to image_tag('kpb_logo.jpg'), refinery.root_path %>
+      </div>
+     <%= render '/refinery/content_page' %>
+  </div>
+</div>
+
