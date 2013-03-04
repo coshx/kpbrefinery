@@ -27,7 +27,6 @@ module Refinery
     def show
 
       @request = request.fullpath
-
       if @request.include?("the-torah-code")
         @book_banner_graphic = 'ttc_graphic.jpg'
         @book_banner_image = 'ttc_image.jpg'
