@@ -1,23 +1,26 @@
 <div class="container">
-  <div id="top_banner">
-    <div id="image">
-      <%= image_tag('tom_logo.jpg') %>
-    </div>
-  </div>
+    <div id="book_banner_color_stripe"></div>
 
-  <div id="span_left">
-    <div id="color">
+    <div id="span_left">
 
     </div>
-  </div>
-  <div id="span_right">
-    <%= render(:partial => "/refinery/menu", :locals => {:dom_id => 'menu',:css => 'menu'}) %>
-  </div>
-  <div id="span_center">
-    <div id="logo">
-      <%= link_to image_tag('kpb_logo.jpg'), refinery.root_path %>
+
+    <div id="span_right">
+      <%= render(:partial => "/refinery/menu", :locals => {:dom_id => 'menu',:css => 'menu'}) %>
+    </div>
+
+    <div id="span_center">
+      <div id="book_banner_image">
+        <%= image_tag('teotb_calendar.jpg') %>
       </div>
-     <%= render '/refinery/content_page' %>
+
+      <div id="book_banner_graphic">
+        <%= image_tag('teotb_logo.jpg') %>
+      </div>
+      <div id="kpb_logo">
+        <%= link_to image_tag('kpb_logo.jpg'), refinery.root_path %>
+      </div>
+      <%= render '/refinery/content_page' %>
   </div>
 </div>
 
