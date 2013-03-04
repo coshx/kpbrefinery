@@ -1,26 +1,12 @@
 <div class="container">
-    <div id="book_banner_color_stripe"></div>
 
-    <div id="span_left">
+  <%= render :partial => '/refinery/pages/content_page',
+    :locals => {
+      :book_banner_graphic => @book_banner_graphic,
+      :book_banner_image => @book_banner_image,
+      :book_banner_color_tag => @book_banner_color_tag
+    }
+  %>
 
-    </div>
-
-    <div id="span_right">
-      <%= render(:partial => "/refinery/menu", :locals => {:dom_id => 'menu',:css => 'menu'}) %>
-    </div>
-
-    <div id="span_center">
-      <div id="book_banner_image">
-        <%= image_tag('teotb_calendar.jpg') %>
-      </div>
-
-      <div id="book_banner_graphic">
-        <%= image_tag('teotb_logo.jpg') %>
-      </div>
-      <div id="kpb_logo">
-        <%= link_to image_tag('kpb_logo.jpg'), refinery.root_path %>
-      </div>
-      <%= render '/refinery/content_page' %>
-  </div>
 </div>
 

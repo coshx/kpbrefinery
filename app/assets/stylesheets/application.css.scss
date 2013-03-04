@@ -12,7 +12,7 @@
  *= require_tree .
  */
 
-$banner_height: 64px ;
+$banner_height: 67px ;
 $center_span_left_margin: 80px ;
 
 
@@ -71,16 +71,26 @@ body {
 #body_content, #side_body_content {
  margin-left:$center_span_left_margin ;
  margin-top:75px ;
- background-color: green ;
+ //background-color: green ;
 }
 
-#book_banner_color_stripe{
-  background-color: #0B4417; ;
+.book_banner_color_stripe{
   position:relative ;
   top:100px;
   height: $banner_height ;
   width:100% ;
 }
+
+.red{
+  background-color: #501616;
+}
+.green{
+  background-color: #0B4417;
+}
+.blue{
+  background-color: #003663;
+}
+
 
 #book_banner_image{
   position:absolute ;

@@ -1,0 +1,24 @@
+
+<div class="<%="book_banner_color_stripe "+book_banner_color_tag %>"></div>
+<div id="span_left"></div>
+<div id="span_right">
+  <%= render(:partial => "/refinery/menu", :locals => {:dom_id => 'menu',:css => 'menu'}) %>
+</div>
+
+<div id="span_center">
+  <div id="book_banner_image">
+    <%= image_tag(book_banner_image) %>
+  </div>
+  <div id="book_banner_graphic">
+    <%= image_tag(book_banner_graphic) %>
+  </div>
+  <div id="kpb_logo">
+    <%= link_to image_tag('kpb_logo.jpg'), refinery.root_path %>
+  </div>
+  <%= render_content_page(@page, {
+        :hide_sections => local_assigns[:hide_sections],
+        :can_use_fallback => !local_assigns[:show_empty_sections] && !local_assigns[:remove_automatic_sections]
+      }) %>
+  <%= render '/refinery/draft_page_message' unless @page.nil? or @page.live? -%>
+
+</div>

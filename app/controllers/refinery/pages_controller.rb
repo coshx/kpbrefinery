@@ -8,10 +8,9 @@ module Refinery
 
     # This action is usually accessed with the root path, normally '/'
     def home
-      @bookone = Refinery::Page.find('book-one')
-      @booktwo = Refinery::Page.find('book-two')
-      @bookthree = Refinery::Page.find('book-three')
-
+      @bookone = Refinery::Page.find("the-torah-code")
+      @booktwo = Refinery::Page.find("the-end-of-the-beginning")
+      @bookthree = Refinery::Page.find("the-owners-manual")
       render_with_templates?
     end
 
@@ -26,6 +25,23 @@ module Refinery
     #   GET /about/mission
     #
     def show
+
+      @request = request.fullpath
+
+      if @request.include?("the-torah-code")
+        @book_banner_graphic = 'ttc_graphic.jpg'
+        @book_banner_image = 'ttc_image.jpg'
+        @book_banner_color_tag = 'red'
+      elsif @request.include?("the-end-of-the-beginning")
+        @book_banner_graphic = 'teotb_graphic.jpg'
+        @book_banner_image = 'teotb_image.jpg'
+        @book_banner_color_tag = 'blue'
+      elsif @request.include?("the-owners-manual")
+        @book_banner_graphic = 'tom_graphic.jpg'
+        @book_banner_image = 'tom_image.jpg'
+        @book_banner_color_tag = 'green'
+      end
+
       if current_user_can_view_page?
         if should_skip_to_first_child?
           redirect_to refinery.url_for(first_live_child.url)

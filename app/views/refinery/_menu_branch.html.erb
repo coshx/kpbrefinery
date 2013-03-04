@@ -5,7 +5,7 @@
 -%>
 
 <%- parent = menu_branch.parent %>
-<%- page_name = parent.to_a[7][1].to_a[2][1][0].to_s unless parent.nil?%> <!-- bud tugley - should probably convert original string to hash -->
+<%- page_name = parent.to_a[7][1].to_a[2][1][0].to_s unless parent.nil?%>
 
 <% unless page_name.nil? %>
   <% if request.fullpath.include?(page_name) %>
