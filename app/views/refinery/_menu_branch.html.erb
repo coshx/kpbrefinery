@@ -5,12 +5,17 @@
 -%>
 
 <ul class='clearfix'>
-<%- book_name = (refinery.url_for(menu_branch.url)+'/').match(/[\w-]{2,}/).to_s %>
+<%- book_name = (refinery.url_for(menu_branch.url)+'/').match(/[\w-]{2,}/) %>
 
-<% if request.fullpath.include?(book_name) && book_name.length>0 %>
+  
+<% if request.fullpath.include?(book_name.to_s) && book_name.to_s.length>0 %>
   <ul>
     <li <%= ['', css].compact.join(' ').gsub(/\S*$\//, '').html_safe %> >
-      <%= link_to(menu_branch.title, refinery.url_for(menu_branch.url))-%>
+      <%- if book_name.post_match.gsub('/','').blank? %>
+        <%= link_to("Foreward", refinery.url_for(menu_branch.url))-%>
+      <%- else %>
+       <%= link_to(menu_branch.title, refinery.url_for(menu_branch.url))-%>
+      <%- end %>
     </li>
   </ul>
 <% end -%>
