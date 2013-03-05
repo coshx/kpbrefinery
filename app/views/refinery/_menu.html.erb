@@ -8,7 +8,7 @@
 -%>
 
 <nav id='<%= dom_id %>' class='<%= css %>'>
-  <ul>
+
    <%= render :partial => '/refinery/menu_branch', :collection => roots,
                :locals => {
                  :hide_children => hide_children,
@@ -16,6 +16,6 @@
                  :menu_levels => local_assigns[:menu_levels],
                  :apply_css => false #if you don't care about class='first' class='last' or class='selected' set apply_css to false for speed.
                } -%>
-  </ul>
+
 </nav>
 <% end -%>
