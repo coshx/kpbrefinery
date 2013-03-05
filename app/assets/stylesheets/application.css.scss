@@ -117,6 +117,10 @@ body {
 
 }
 
+#body_content_title{
+ display:none ;
+}
+
 #menu{
   margin:0px ;
   margin-top:125px ;
@@ -139,11 +143,14 @@ body {
       margin:0px ;
 
       padding:0px ;
-
+      text-decoration: none ;
+      color: #222222;
     }
 
     &.selected a, a:hover {
       background: #CCC;
+      color:#222222;
+      text-decoration: none ;
     }
   }
 }
