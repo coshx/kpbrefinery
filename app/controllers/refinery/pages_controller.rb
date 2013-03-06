@@ -8,9 +8,9 @@ module Refinery
 
     # This action is usually accessed with the root path, normally '/'
     def home
-      @bookone = Refinery::Page.find("the-torah-code")
-      @booktwo = Refinery::Page.find("the-end-of-the-beginning")
-      @bookthree = Refinery::Page.find("the-owners-manual")
+      @ttc_link = Refinery::Page.find("the-torah-code")
+      @teotb_link = Refinery::Page.find("the-end-of-the-beginning")
+      @tom_link = Refinery::Page.find("the-owners-manual")
       render_with_templates?
     end
 
