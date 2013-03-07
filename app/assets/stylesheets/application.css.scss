@@ -15,10 +15,18 @@ $banner_height: 67px ;
 $center_span_left_margin: 80px ;
 
 body {
-  font-family:"Times New Roman",Verdana, Georgia,Serif;
+  font-family:"Georgia" ;
   font-size: 16px;
   line-height: 25px;
   min-width: 896px ;
+
+  strong{
+    font-family: "helvetica", "Arial" ;
+    font-weight: bold ;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
 }
 
 .container {
@@ -36,10 +44,11 @@ body {
 
 //front page
 
+
 #front_span_right{
   margin-top:(-3*$banner_height) ;
   float: right ;
-  background-color: #cccccc;
+  background-color: #DDD7CF;
   width:20% ;
   height:800px ;
   padding-top:60px ;
@@ -51,7 +60,7 @@ body {
   float: left ;
   width:10% ;
   height:800px ;
-  background-color: #cccccc;
+  background-color: #DDD7CF;
 }
 
 #front_span_center{
