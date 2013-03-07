@@ -43,7 +43,10 @@ body {
 
 
 //front page
+#footer{
+  text-align: center ;
 
+}
 
 #front_span_right{
   font-family: "Arial" ;
@@ -221,7 +224,7 @@ body {
   width:10% ;
   float: left ;
   width:10% ;
-  height:1600px ;
+  height:1660px ;
   background-color: #DDD7CF;
 }
 
@@ -234,11 +237,13 @@ body {
   background: white;
   color: #333;
   width:80% ;
+
 }
 
 #body_content, #side_body_content {
  margin-left:$center_span_left_margin ;
  margin-top:75px ;
+  width:75% ;
  //background-color: green ;
 }
 
@@ -302,7 +307,7 @@ body {
 #menu{
   margin:0px ;
   margin-top:125px ;
-  background: #cccccc ;
+  background: #DDD7CF ;
   padding:0px ;
 }
 
@@ -339,7 +344,7 @@ body {
     }
 
     &.selected a, a:hover {
-      background: #CCC;
+      background: #DDD7CF;
       color:#222222;
       text-decoration: none ;
     }
