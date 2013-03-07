@@ -15,7 +15,7 @@ $banner_height: 67px ;
 $center_span_left_margin: 80px ;
 
 body {
-  font-family:"Georgia" ;
+  font-family: "Georgia" ;
   font-size: 16px;
   line-height: 25px;
   min-width: 896px ;
@@ -46,6 +46,7 @@ body {
 
 
 #front_span_right{
+  font-family: "Arial" ;
   margin-top:(-3*$banner_height) ;
   float: right ;
   background-color: #DDD7CF;
@@ -55,6 +56,7 @@ body {
 }
 
 #front_span_left{
+  font-family: "Arial" ;
   margin-top:(-3*$banner_height) ;
   width:10% ;
   float: left ;
@@ -64,6 +66,7 @@ body {
 }
 
 #front_span_center{
+  font-family: "Arial" ;
   margin-top:(-3*$banner_height);
   padding-top:100px ;
   margin-left:auto;
@@ -75,41 +78,25 @@ body {
   height:700px ;
 }
 
-#front_teotb_right_text{
+.front_right_text_container{
+  height:100px ;
   display:block ;
   position:relative ;
-  left:-50px ;
-  margin-top: 40px ;
+  margin-left:20px ;
   color: #555555;
-  width:80% ;
-  line-height:20px ;
+  width:90% ;
+  font-size: 12px ;
+  line-height:16px ;
 
 }
 #front_teotb_right_text{
-  display:block ;
-  position:relative ;
-  top:(-60+2*$banner_height);
-  margin-left:80px ;
-  line-height:20px ;
+  margin-top:(45+$banner_height);
 }
 #front_tom_right_text{
-  display:block ;
-  position:relative ;
-  margin-left:30px ;
-  margin-top: (65+2*$banner_height);
-  color: #555555;
-  width:80% ;
-  line-height:20px ;
+  margin-top: (20+$banner_height);
 }
-
 #front_ttc_right_text{
-  display:block ;
-  position:relative ;
-  margin-left:30px ;
-  margin-top: 125px ;
-  color: #555555;
-  width:80% ;
-  line-height:20px ;
+  margin-top: (20+$banner_height);
 }
 
 #front_teotb_left_text{
@@ -119,24 +106,30 @@ body {
   margin-left:80px ;
   line-height:20px ;
   height:(126+2*$banner_height) ;
-  width:80% ;
+  width:75% ;
+  font-size: 14px ;
+  line-height:16px ;
 }
 
 #front_tom_left_text{
   display:block ;
   position:relative ;
   margin-left:80px ;
-  line-height:20px ;
   height:188px ;
   color: #222222;
-  width:80% ;
+  width:75% ;
+  font-size: 14px ;
+  line-height:16px ;
+
 }
 #front_ttc_left_text{
   display:block ;
   position:relative ;
+  font-size: 14px ;
+  line-height:16px ;
+
   margin-left:80px ;
-  line-height:20px ;
-  width:80% ;
+  width:75% ;
 }
 
 
