@@ -28,6 +28,7 @@ body {
   }
 
   h1{
+    font-weight: normal ;
     font-size: 24px;
     line-height: 28px;
   }
@@ -314,18 +315,27 @@ body {
   margin-top:125px ;
   background: #DDD7CF ;
   padding:0px ;
+  font-family: "helvetica", "Arial" ;
+  font-size: 14px;
+  line-height: 20px;
+
 }
 
 #menu_forward{
-   padding-left:10px ;
-  a {
-  text-decoration: none ;
-    color: #222222;
-  }
+  padding-left:10px ;
 
+  a {
+   font-family: "helvetica", "Arial" ;
+   font-size: 14px;
+   line-height: 20px;
+
+   text-decoration: none ;
+   color: #222222;
+  }
 }
 
 #menu ul {
+
    margin:0px ;
    padding:0px ;
    padding-left:10px ;
@@ -334,15 +344,14 @@ body {
 
 
    li {
-     margin:0px;
+    margin:0px;
     padding-left:0px ;
 
-     text-decoration: none ;
-     list-style-type: none;
+    text-decoration: none ;
+    list-style-type: none;
 
-     a {
+    a {
       margin:0px ;
-
       padding:0px ;
       text-decoration: none ;
       color: #222222;
