@@ -19,6 +19,7 @@ body {
   font-size: 16px;
   line-height: 25px;
   min-width: 896px ;
+  margin-top:20px ;
 
   strong{
     font-family: "helvetica", "Arial" ;
@@ -36,8 +37,7 @@ body {
 }
 
 .container {
-  margin-top:20px ;
-  display: block ;
+   display: block ;
   background-color: #eee;
  //-webkit-border-radius: 0 0 6px 6px;
  // -moz-border-radius: 0 0 6px 6px;
