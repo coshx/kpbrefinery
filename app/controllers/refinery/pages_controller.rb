@@ -31,14 +31,17 @@ module Refinery
         @book_banner_graphic = 'ttc_graphic.jpg'
         @book_banner_image = 'ttc_image.jpg'
         @book_banner_color_tag = 'red'
+        @book_text_color_tag='red_text'
       elsif @request.include?("the-end-of-the-beginning")
         @book_banner_graphic = 'teotb_graphic.jpg'
         @book_banner_image = 'teotb_image.jpg'
         @book_banner_color_tag = 'blue'
+        @book_text_color_tag='blue_text'
       elsif @request.include?("the-owners-manual")
         @book_banner_graphic = 'tom_graphic.jpg'
         @book_banner_image = 'tom_image.jpg'
         @book_banner_color_tag = 'green'
+        @book_text_color_tag='green_text'
       end
 
       if current_user_can_view_page?

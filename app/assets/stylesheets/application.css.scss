@@ -269,11 +269,20 @@ body {
 .red{
   background-color: #501616;
 }
+.red_text{
+  a{color: #501616;}
+}
 .green{
   background-color: #0B4417;
 }
+.green_text{
+  a{color: #0B4417;}
+}
 .blue{
   background-color: #003663;
+}
+.blue_text{
+  a{color: #003663;}
 }
 
 
@@ -339,7 +348,7 @@ body {
   }
 }
 
-#menu_volume{
+.menu_volume{
   padding-left:10px ;
 
   a {
@@ -349,7 +358,6 @@ body {
    font-weight: bold;
 
    text-decoration: none ;
-   color: #222222;
   }
 }
 
