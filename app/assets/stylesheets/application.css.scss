@@ -39,7 +39,7 @@ body {
 }
 
 .container {
-   display: block ;
+  display: block ;
   background-color: #eee;
  //-webkit-border-radius: 0 0 6px 6px;
  // -moz-border-radius: 0 0 6px 6px;
@@ -213,7 +213,11 @@ body {
   margin-left: $center_span_left_margin - 175px ;
 }
 
+#books_are_free{
+ padding-top:60px ;
+ padding-left:80px;
 
+}
 
 //content page
 

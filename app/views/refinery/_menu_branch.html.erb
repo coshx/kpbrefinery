@@ -6,7 +6,6 @@
 
 <%- book_name = (refinery.url_for(menu_branch.url)+'/').match(/[\w-]{2,}/) %>
 
-
   
 <% if request.fullpath.include?(book_name.to_s) && book_name.to_s.length>0 %>
 
