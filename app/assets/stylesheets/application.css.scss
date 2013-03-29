@@ -71,7 +71,6 @@ body {
   float: left ;
   width:10% ;
   height:1660px ;
-
   background-color: #DDD7CF;
 }
 
@@ -141,8 +140,6 @@ body {
   margin-left:80px ;
   width:70% ;
 }
-
-
 
 #teotb_color_stripe{
   position:relative ;
@@ -225,7 +222,6 @@ body {
   float: right ;
   background-color: #DDD7CF;
   width:25% ;
-  height:32000px ;
   padding-top:60px ;
 }
 
@@ -234,7 +230,6 @@ body {
   width:10% ;
   float: left ;
   width:10% ;
-  height:32060px ;
   background-color: #DDD7CF;
 }
 
@@ -247,7 +242,6 @@ body {
   background: white;
   color: #333;
   width:80% ;
-
 }
 
 #body_content, #side_body_content {
@@ -303,6 +297,13 @@ body {
   display: block ;
   top:10px ;
   margin-left: $center_span_left_margin;
+}
+
+#next_arrow{
+   display: block ;
+   position:relative ;
+   bottom:75px ;
+   margin-left: $center_span_left_margin;
 }
 
 .clearfix {

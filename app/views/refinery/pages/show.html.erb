@@ -2,8 +2,18 @@
 <script type="text/javascript">
   var sheet= document.styleSheets[0];
   sheet.insertRule("body strong { color: <%= @book_text_color_hex%>}", 0);
-</script>
 
+
+  $(document).ready(function() {
+    var text_length = $('#span_center').height() ;
+
+    if(text_length<$(window).height()){
+     // text_length = $(window).height() ;
+    }
+    $('#span_right').css({height : text_length + 150});
+    $('#span_left').css({height : text_length + 210});
+  });
+</script>
 
 
 <%= render :partial => '/refinery/pages/content_page',
@@ -14,6 +24,5 @@
   :book_text_color_tag => (@book_text_color_tag ||"")
 }
 %>
-
 
 </div>
