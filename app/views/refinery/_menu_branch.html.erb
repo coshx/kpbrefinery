@@ -8,15 +8,15 @@
 
   
 <% if request.fullpath.include?(book_name.to_s) && book_name.to_s.length>0 %>
-      <%- if book_name.post_match.gsub('/','').blank? %>
-        <div id= 'menu_forward' >
-        <%= link_to("Foreword", refinery.url_for(menu_branch.url))-%>
-        </div>
+  <%- if book_name.post_match.gsub('/','').blank? %>
+    <div id= 'menu_forward' >
+    <%= link_to("Foreword", refinery.url_for(menu_branch.url))-%>
+    </div>
   <%- else %>
-        <li <%= ['', css].compact.join(' ').gsub(/\S*$\//, '').html_safe %> >
-          <%= link_to(menu_branch.title, refinery.url_for(menu_branch.url))-%>
-        </li>
-      <%- end %>
+    <li <%= ['', css].compact.join(' ').gsub(/\S*$\//, '').html_safe %> >
+       <%= link_to(menu_branch.title, refinery.url_for(menu_branch.url))-%>
+    </li>
+  <%- end %>
 <% end -%>
 
 <% if ( (children = menu_branch.children unless hide_children).present? && (!local_assigns[:menu_levels] || menu_branch.ancestors.length < local_assigns[:menu_levels]) ) -%>
