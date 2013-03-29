@@ -21,7 +21,6 @@ body {
   font-size: 16px;
   line-height: 25px;
   min-width: 896px ;
-  margin-top:20px ;
 
   strong{
     font-family: "helvetica", "Arial" ;
@@ -171,7 +170,7 @@ body {
 
 #front_teotb_banner_graphic{
   position:absolute ;
-  top:120px ;
+  top:100px ;
   height:$banner_height ;
   margin-left:$center_span_left_margin  ;
 }
@@ -179,28 +178,28 @@ body {
 #front_teotb_banner_image{
   position:absolute ;
   display: block ;
-  top:135px ;
+  top:115px ;
   margin-left: $center_span_left_margin - 175px ;
 }
 
 #front_tom_banner_graphic{
   position:absolute ;
-  top:307px ;
-    height:$banner_height ;
-    margin-left:$center_span_left_margin  ;
+  top:287px ;
+  height:$banner_height ;
+  margin-left:$center_span_left_margin  ;
 }
 
 #front_tom_banner_image{
   position:absolute ;
   display: block ;
-  top:320px ;
+  top:300px ;
   margin-left: $center_span_left_margin - 175px ;
 
 }
 
 #front_ttc_banner_graphic{
   position:absolute ;
-  top:494px ;
+  top:474px ;
   height:$banner_height ;
   margin-left:$center_span_left_margin  ;
 }
@@ -208,7 +207,7 @@ body {
 #front_ttc_banner_image{
   position:absolute ;
   display: block ;
-  top:507px ;
+  top:487px ;
   margin-left: $center_span_left_margin - 175px ;
 }
 
@@ -288,13 +287,13 @@ body {
 #book_banner_image{
   position:absolute ;
   display: block ;
-  top:135px ;
+  top:115px ;
   margin-left: $center_span_left_margin - 175px ;
 }
 
 #book_banner_graphic{
   position:absolute ;
-  top:120px ;
+  top:100px ;
   height:$banner_height;
   margin-left:$center_span_left_margin  ;
 }
@@ -302,7 +301,7 @@ body {
 #kpb_logo{
   position:absolute ;
   display: block ;
-  top:30px ;
+  top:10px ;
   margin-left: $center_span_left_margin;
 }
 
