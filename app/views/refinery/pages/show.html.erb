@@ -1,12 +1,17 @@
-<div class="container">
 
-  <%= render :partial => '/refinery/pages/content_page',
-    :locals => {
-      :book_banner_graphic => @book_banner_graphic,
-      :book_banner_image => @book_banner_image,
-      :book_banner_color_tag => (@book_banner_color_tag ||"")
-     }
-  %>
+<script type="text/javascript">
+  var sheet= document.styleSheets[0];
+  sheet.insertRule("body strong { color: <%= @book_text_color_hex%>}", 0);
+</script>
+
+<%= render :partial => '/refinery/pages/content_page',
+  :locals => {
+  :book_banner_graphic => @book_banner_graphic,
+  :book_banner_image => @book_banner_image,
+  :book_banner_color_tag => (@book_banner_color_tag ||""),
+  :book_text_color_tag => (@book_text_color_tag ||"")
+}
+%>
 
 
 </div>
