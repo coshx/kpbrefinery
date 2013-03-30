@@ -27,6 +27,7 @@ module Refinery
     def show
 
       @request = request.fullpath
+
       if @request.include?("the-torah-code")
         @book_banner_graphic = 'ttc_graphic.jpg'
         @book_banner_image = 'ttc_image.jpg'
@@ -46,6 +47,9 @@ module Refinery
         @book_text_color_tag='green_text'
         @book_text_color_hex='#0B4417'
       end
+
+
+
 
       if current_user_can_view_page?
         if should_skip_to_first_child?
