@@ -20,7 +20,7 @@ body {
   font-family: "Georgia" ;
   font-size: 16px;
   line-height: 25px;
-  min-width: 896px ;
+  min-width: 950px ;
 
   strong{
     font-family: "helvetica", "Arial" ;
@@ -39,7 +39,7 @@ body {
 
 .container {
   display: block ;
-  background-color: #eee;
+  background-color: #DDD7CF;
  //-webkit-border-radius: 0 0 6px 6px;
  // -moz-border-radius: 0 0 6px 6px;
  // border-radius: 0 0 6px 6px;
@@ -60,8 +60,8 @@ body {
   margin-top:(-3*$banner_height) ;
   float: right ;
   background-color: #DDD7CF;
-  width:25% ;
-  height:1600px ;
+  width:250px ;
+  height:700px ;
   padding-top:60px ;
 }
 
@@ -69,8 +69,8 @@ body {
   font-family: "Arial" ;
   margin-top:(-3*$banner_height) ;
   float: left ;
-  width:10% ;
-  height:1660px ;
+  width:100px ;
+  height:700px ;
   background-color: #DDD7CF;
 }
 
@@ -83,8 +83,9 @@ body {
   display: block ;
   background: white;
   color: #000;
-  width:80% ;
   height:700px ;
+  margin-right:330px;
+  margin-left:130px;
 }
 
 .front_right_text_container{
@@ -96,7 +97,7 @@ body {
   width:90% ;
   font-size: 12px ;
   line-height:16px ;
-
+  padding-left:10px;
 }
 #front_teotb_right_text{
   margin-top:(45+$banner_height);
@@ -115,9 +116,9 @@ body {
   margin-left:80px ;
   line-height:20px ;
   height:(126+2*$banner_height) ;
-  width:70% ;
   font-size: 14px ;
   line-height:16px ;
+  margin-right:80px;
 }
 
 #front_tom_left_text{
@@ -126,19 +127,17 @@ body {
   margin-left:80px ;
   height:188px ;
   color: #222222;
-  width:70% ;
   font-size: 14px ;
   line-height:16px ;
-
+  margin-right:80px;
 }
 #front_ttc_left_text{
   display:block ;
   position:relative ;
   font-size: 14px ;
   line-height:16px ;
-
   margin-left:80px ;
-  width:70% ;
+  margin-right:80px;
 }
 
 #teotb_color_stripe{
@@ -176,7 +175,7 @@ body {
   position:absolute ;
   display: block ;
   top:115px ;
-  margin-left: $center_span_left_margin - 175px ;
+  margin-left: $center_span_left_margin - 170px;
 }
 
 #front_tom_banner_graphic{
@@ -190,7 +189,7 @@ body {
   position:absolute ;
   display: block ;
   top:300px ;
-  margin-left: $center_span_left_margin - 175px ;
+  margin-left: $center_span_left_margin - 170px ;
 
 }
 
@@ -205,7 +204,7 @@ body {
   position:absolute ;
   display: block ;
   top:487px ;
-  margin-left: $center_span_left_margin - 175px ;
+  margin-left: $center_span_left_margin - 170px ;
 }
 
 #books_are_free{
@@ -221,33 +220,33 @@ body {
   margin-top:-$banner_height ;
   float: right ;
   background-color: #DDD7CF;
-  width:25% ;
+  width:250px ;
   padding-top:60px ;
 }
 
 #span_left{
   margin-top:-$banner_height ;
-  width:10% ;
+  width:130px ;
   float: left ;
-  width:10% ;
   background-color: #DDD7CF;
 }
 
 #span_center{
   margin-top:-$banner_height ;
   padding-top:100px ;
-  margin-left:auto;
-  margin-right:auto;
   display: block ;
   background: white;
   color: #333;
-  width:80% ;
+  margin-right:330px;
+  margin-left:130px;
+}
+.inner{
+
 }
 
 #body_content, #side_body_content {
  margin-left:$center_span_left_margin ;
  margin-top:75px ;
-  width:70% ;
  //background-color: green ;
 }
 
@@ -282,7 +281,7 @@ body {
   position:absolute ;
   display: block ;
   top:115px ;
-  margin-left: $center_span_left_margin - 175px ;
+  margin-left: $center_span_left_margin - 170px ;
 }
 
 #book_banner_graphic{
@@ -311,7 +310,7 @@ body {
 }
 
 #email_contact{
-  padding-left: 5px ;
+  padding-left: 15px ;
   position:absolute ;
   display: block ;
   top:40px ;
