@@ -372,6 +372,8 @@ body {
     text-decoration: none ;
     list-style-type: none;
 
+
+
     a {
       margin:0px ;
       padding:0px ;
@@ -379,10 +381,11 @@ body {
       color: #222222;
     }
 
-    &.selected a, a:hover {
-      background: #DDD7CF;
-      color:#222222;
-      text-decoration: none ;
+    &.selected a {
+      list-style-type:circle;
+      color:#000000;
+      font-weight:bold;
+      font-size:14px;
     }
   }
 }
