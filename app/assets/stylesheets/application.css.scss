@@ -362,9 +362,6 @@ body {
    padding:0px ;
    padding-left:10px ;
 
-  list-style-type: none;
-
-
    li {
     margin:0px;
     padding-left:0px ;
@@ -382,10 +379,7 @@ body {
     }
 
     &.selected a {
-      list-style-type:circle;
-      color:#000000;
       font-weight:bold;
-      font-size:14px;
     }
   }
 }

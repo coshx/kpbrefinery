@@ -11,9 +11,10 @@
 
   <%- if book_name.post_match.gsub('/','').blank? %>
   <%- elsif (book_name.post_match.count "/") == 2 %>
-    <div class="<%= "menu_volume "+@book_text_color_tag%>">
-      <%= link_to(raw(menu_branch.title), refinery.url_for(menu_branch.url))-%>
-    </div>
+      <div class="<%= "menu_volume "+@book_text_color_tag%>">
+       <%= link_to(raw(menu_branch.title), refinery.url_for(menu_branch.url))-%>
+     </div>
+
   <%- else -%>
     <li <%= ['', css].compact.join(' ').gsub(/\S*$\//, '').html_safe %> >
        <%= link_to(raw(menu_branch.title), refinery.url_for(menu_branch.url))-%>
