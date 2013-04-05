@@ -1,6 +1,7 @@
 Kpb::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
+
   # Code is not reloaded between requests
   config.cache_classes = true
 
@@ -65,3 +66,5 @@ Kpb::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 end
+
+Refinery::Core.config.s3_backend = true
