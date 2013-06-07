@@ -22,6 +22,15 @@
 
   <div id="content">
 
+    <div id="social_media_links">
+
+        <div class="fb-like" data-href="http://www.kenpowerbooks.com" data-send="true" data-layout="button_count" data-width="450" data-show-faces="false" data-font="tahoma"></div>
+        <br>
+        <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+        <br>
+        <g:plusone></g:plusone>
+      </div>
+
   <%= render_content_page(@page, {
           :hide_sections => local_assigns[:hide_sections],
           :can_use_fallback => !local_assigns[:show_empty_sections] && !local_assigns[:remove_automatic_sections]

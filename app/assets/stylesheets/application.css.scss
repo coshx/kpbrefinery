@@ -243,10 +243,13 @@ body {
 
 }
 
+#social_media_links{
+  margin-left:$center_span_left_margin;
+  margin-top:$banner_height + 20px;
+}
+
 #body_content, #side_body_content {
  margin-left:$center_span_left_margin ;
- margin-top:75px ;
- //background-color: green ;
 }
 
 .book_banner_color_stripe{
